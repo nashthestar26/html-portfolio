@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Oswald:wght@200..700&display=swap");
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+@media only screen and (min-width: 900px) {
+.blue-background{
+    background-color: #03346E;
+    background-size: 180% 180%;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+a:hover{
+    color: #000000;
+    transition: .5s ;
+}
+
+.navbar-button{
+    overflow: hidden;
+    background-color: #144272;
+    position: sticky;
+    left: 0;
+    top: -109px;
+    width: 100%;
+    padding: 5px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.4s;
+    z-index: 1;
+}
+.right{
+    margin-top: 16px;
+}
+.img{
+    margin-top: 15px;
+    margin-bottom:-10px;
+    width: 80px;
+}
+.navbar-button .click{
+    font-size: 40px;
+    font-weight: 700;
+}
+.navbar-button ul{
+    display: flex;
+}
+.navbar-button ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+.navbar-button ul li a{
+    font-size: 25px;
+    font-weight: 600;
+    transition: .5s;
+}
+.navbar-button ul li:hover a{
+    color: #000000;
+}
+.main{
+    display: flex; 
+    align-items: center;
+    height: 88vh;
+    padding: 60px 9% 0;
+    color: #000000;
+}
+.main-info h1{
+    font-size: 80px;
+    color: #ffffff;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 2px;
+}
+.main-info h2{
+    font-size: 32px;
+    margin-top: -10px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info p{
+    font-size: 17px;
+    margin: 10px 0 25px;
+    color: #ffffff;
+    letter-spacing: .5px;
+}
+.main-info .btn-me{
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #E2E2B6;
+    border: 2px solid #E2E2B6;
+    border-radius: 40px;
+    box-shadow: 0 0 8px #E2E2B6;
+    font-weight: 700;
+    transition: .5s;
+    margin-top: 18px;
+}
+.btn-text{
+    color: #000000;
+}
+.btn:hover{
+    background: transparent;
+    color: #ffffff;
+    box-shadow: none;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 8px #ffffff;
+}
+.main-info .btn-me .icon{
+    margin-left: 20px;
+}
+.main-info .btn-me .icon a{
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #E2E2B6;
+    box-shadow: 0 0 5px #E2E2B6;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #E2E2B6;
+    margin: 0 8px;
+    transition: .5s;
+}
+.main-info .btn-me .icon a:hover{
+    background:#E2E2B6;
+    color: #000000;
+    border: 2px solid #E2E2B6;
+    box-shadow: 0 0 10px #E2E2B6;
+}
+.my-img .img-box{
+    position: relative;
+    width: 32vw;
+    height: 32vw;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.my-img .img-box::before,
+.my-img .img-box::after{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(#E2E2B6, transparent, transparent,#E2E2B6,#E2E2B6);
+    
+}
+.my-img .img-box .img-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #03346E;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+}
+.my-img{
+    margin-left: 140px;
+}
+.my-img .img-box .img-item img {
+    position: absolute;
+    display: block;
+    width: 85%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+.svg-img > img{
+    display: inline-flex;
+    margin-top: 20px;
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+}
+.link-primary{
+    font-size: 20px;
+    text-decoration: underline blue;
+}
+.ako{
+    height: 250px;
+    width: 200px;
+    zoom: -10;
+}
+}
