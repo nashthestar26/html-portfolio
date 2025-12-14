@@ -197,13 +197,16 @@ a:hover{
 @media (max-width: 600px){
  
     .navbar-button{
-        padding: 0 15px;
+        padding: 0 25px;
 }
     .main{
         flex-direction: column-reverse;
         text-align: center;
         background-color: #03346E;
         height: auto;
+    }
+    .main-info h2{
+        margin-top: 10px;
     }
     .my-img{
         margin-right: 135px;
