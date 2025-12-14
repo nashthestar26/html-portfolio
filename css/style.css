@@ -8,8 +8,6 @@
     font-family: 'Oswald', sans-serif;
 }
 
-
-@media only screen and (min-width: 900px) {
 .blue-background{
     background-color: #03346E;
     background-size: 180% 180%;
@@ -62,9 +60,9 @@ a:hover{
     font-weight: 600;
     transition: .5s;
 }
-.navbar-button ul li:hover a{
+/* .navbar-button ul li:hover a{
     color: #000000;
-}
+} */
 .main{
     display: flex; 
     align-items: center;
@@ -117,10 +115,10 @@ a:hover{
     border: 2px solid #ffffff;
     box-shadow: 0 0 8px #ffffff;
 }
-.main-info .btn-me .icon{
+.navbar-button .icon{
     margin-left: 20px;
 }
-.main-info .btn-me .icon a{
+.navbar-button .icon a{
     display: inline-flex;
     padding: 8px;
     border: 2px solid #E2E2B6;
@@ -131,7 +129,7 @@ a:hover{
     margin: 0 8px;
     transition: .5s;
 }
-.main-info .btn-me .icon a:hover{
+.navbar-button .icon a:hover{
     background:#E2E2B6;
     color: #000000;
     border: 2px solid #E2E2B6;
@@ -169,15 +167,15 @@ a:hover{
     z-index: 1;
     overflow: hidden;
 }
-.my-img{
-    margin-left: 140px;
-}
 .my-img .img-box .img-item img {
     position: absolute;
     display: block;
     width: 85%;
     object-fit: cover;
     opacity: 0.9;
+}
+.my-img{
+    margin-left: 140px;
 }
 .svg-img > img{
     display: inline-flex;
@@ -195,4 +193,49 @@ a:hover{
     width: 200px;
     zoom: -10;
 }
+
+@media (max-width: 600px){
+    .navbar-button{
+        padding: 0 10px;
+}
+    .main{
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: -180px;
+    }
+    .my-img{
+        margin-right: 120px;
+    }
+    .my-img .img-box{
+        height: 75vw;
+        width: 75vw;
+    }
+    .btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #E2E2B6;
+    border: 2px solid #E2E2B6;
+    border-radius: 40px;
+    box-shadow: 0 0 8px #E2E2B6;
+    font-weight: 700;
+    transition: .5s;
+    margin-top: 18px;
+    cursor: pointer;
+    }
+    .btn-text{
+        color: #000000;
+    }
+    .btn:hover{
+        background: transparent;
+        color: #ffffff;
+        box-shadow: none;
+        border: 2px solid #ffffff;
+        box-shadow: 0 0 8px #ffffff;
+    }
+    .navbar-button .icon a:hover{
+    background:#E2E2B6;
+    color: #000000;
+    border: 2px solid #E2E2B6;
+    box-shadow: 0 0 10px #E2E2B6;
+    }
 }
