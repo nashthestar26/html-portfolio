@@ -203,7 +203,7 @@ a:hover{
         flex-direction: column-reverse;
         text-align: center;
         background-color: #03346E;
-        height: 150vh;
+        height: 200vh;
     }
     .my-img{
         margin-right: 120px;
@@ -241,6 +241,7 @@ a:hover{
     box-shadow: 0 0 10px #E2E2B6;
     }
 }
+
 
 
 
